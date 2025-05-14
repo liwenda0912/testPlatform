@@ -1,0 +1,53 @@
+html, body, #app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* 媒体查询：小屏幕设备 */
+@media (max-width: 600px) {
+    .layout-container-demo {
+        font-size: 1.5rem;
+    }
+}
+
+/* 媒体查询：大屏幕设备 */
+@media (min-width: 1200px) {
+    .layout-container-demo {
+        font-size: 3rem;
+    }
+}
+
+.el-avatar.el-avatar--circle.el-tooltip__trigger{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.infinite-list {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.infinite-list .infinite-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--el-color-primary-light-9);
+    margin: 10px;
+    color: var(--el-color-primary);
+}
+.infinite-list .infinite-list-item + .list-item {
+    margin-top: 10px;
+}
+/* 隐藏滚动条 */
+/*html, body {*/
+/*    overflow: auto; !* 允许滚动 *!*/
+/*    scrollbar-width: none; !* Firefox *!*/
+/*    -ms-overflow-style: none; !* IE 和 Edge *!*/
+/*}*/
+
+/*!* 隐藏滚动条的轨道 *!*/
+/*html, body::-webkit-scrollbar {*/
+/*    display: none; !* Chrome, Safari, Opera *!*/
+/*}*/
